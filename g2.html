@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckEng - Grammar</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #eaf5ef; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background-color: #a8d5c4; padding: 20px 40px; font-size: 28px; font-weight: bold; }
+        main { flex-grow: 1; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .quiz-card { background-color: #8bbab0; border-radius: 15px; width: 100%; max-width: 600px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .question-box { background-color: white; margin: 30px 20px; padding: 20px; text-align: center; font-size: 22px; font-weight: bold; }
+        .options-container { display: flex; justify-content: center; gap: 20px; padding: 10px 20px 40px 20px; flex-wrap: wrap; }
+        .option-btn { width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, #5ec3d4, #2a8a9e); color: white; border: none; font-weight: bold; font-size: 15px; cursor: pointer; transition: 0.2s; }
+        .option-btn:hover { transform: scale(1.1); }
+        .card-footer { background-color: #c4d4d1; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+        .progress { color: #777; font-weight: bold; font-size: 18px; }
+        .next-btn { background: linear-gradient(135deg, #439a86, #2a7a67); color: white; padding: 10px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; }
+        footer { background-color: #a8d5c4; padding: 20px 40px; display: flex; justify-content: space-between; font-size: 14px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>CheckEng</header>
+    <main>
+        <!---->
+        <div class="quiz-card">
+            <div class="question-box">I ___ a book right now.</div>
+            <div class="options-container">
+                <button class="option-btn">A. read</button>
+                <button class="option-btn">B. reads</button>
+                <button class="option-btn">C. reading</button>
+                <button class="option-btn">D. is read</button>
+            </div>
+            <div class="card-footer">
+                <div class="progress">Питання 2/5</div>
+                <a href="g3.html" class="next-btn">Далі</a>
+            </div>
+        </div>
+        <!-- КІНЕЦЬ БЛОКУ -->
+    </main>
+    <footer>© 2026 CheckEng. Всі права захищені.</footer>
+</body>
+</html>
