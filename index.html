@@ -44,11 +44,12 @@
         }
 
         /* For quiz cards */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            max-width: 800px;
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*  ПК */
+    gap: 30px;
+    max-width: 800px;
+    width: 100%; 
         }
 
         /* Quiz card with text */
@@ -107,6 +108,14 @@
         @media (max-width: 600px) {
             /* 1. Виправляємо з'їхавшу шапку та підвал */
             body { overflow-x: hidden; } /* Забороняємо сайту хитатися вправо-вліво */
+            .grid {
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important;                 
+        width: 100% !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        } 
+
             header, footer {
                 width: 100%;
                 box-sizing: border-box;
