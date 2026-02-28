@@ -105,10 +105,58 @@
         }
     
         @media (max-width: 600px) {
+            /* 1. Виправляємо з'їхавшу шапку та підвал */
+            body { overflow-x: hidden; } /* Забороняємо сайту хитатися вправо-вліво */
+            header, footer {
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 15px 10px;
+            }
+            footer {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            /* 2. Головна сторінка: картки рівно по центру в один стовпчик */
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            .card {
+                width: 90%;
+                max-width: 300px;
+                margin: 10px 0;
+            }
+
+            /* 3. Сторінка тестів: розсуваємо круглі кнопки*/
+            .options-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; /* Додаємо простір між кнопками */
+                padding: 10px;
+            }
+            .option-btn {
+                width: 75px;
+                height: 75px;
+                margin: 5px;
+            }
+
+            /* 4. Сторінка результатів: зменшуємо розтягнуту кнопку */
+            .score-btn, .btn { 
+                width: auto;
+                max-width: 220px;
+                margin: 10px auto;
+                display: block;
+            }
+        } @media (max-width: 600px) {
             header { padding: 15px 20px; font-size: 22px; text-align: center; }
             footer { padding: 15px 20px; font-size: 12px; flex-direction: column; text-align: center; gap: 10px; }
             
-            /* Выстраиваем карточки в один столбик по центру */
+            /* Картки по центру */
             main { flex-direction: column; padding: 10px; }
             .card { 
                 width: 90%; 
