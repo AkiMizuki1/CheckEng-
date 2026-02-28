@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheckEng - Головна</title>
     <style>
-        /* Базовые настройки страницы */
+        /* Basic of colours */
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #eaf5ef; /* Спокойный пастельно-зеленый фон */
+            background-color: #eaf5ef; 
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
 
-        /* Шапка сайта (Header) */
+        /* Header */
         header {
             background-color: #a8d5c4;
             padding: 20px 40px;
@@ -27,7 +27,7 @@
             color: #000;
         }
 
-        /* Главная часть */
+        /* Main part */
         main {
             flex-grow: 1;
             display: flex;
@@ -43,7 +43,7 @@
             font-weight: normal;
         }
 
-        /* Сетка для карточек тестов */
+        /* For quiz cards */
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -51,7 +51,7 @@
             max-width: 800px;
         }
 
-        /* Карточка с тестом */
+        /* Quiz card with text */
         .card {
             background-color: #ffffff;
             padding: 30px;
@@ -63,15 +63,15 @@
             transition: transform 0.2s;
         }
         .card:hover {
-            transform: translateY(-5px); /* Эффект поднятия при наведении */
+            transform: translateY(-5px); /* Effect on buttons*/
         }
 
-        /* Иконки (пока используем эмодзи для простоты) */
+        /* Icons */
         .icon {
             font-size: 30px;
         }
 
-        /* Зеленые кнопки */
+        /* Buttons */
         .btn {
             background: linear-gradient(135deg, #439a86, #2a7a67);
             color: white;
@@ -89,7 +89,7 @@
             background: linear-gradient(135deg, #2a7a67, #1e5c4d);
         }
 
-        /* Подвал (Footer) */
+        /* Footer */
         footer {
             background-color: #a8d5c4;
             padding: 20px 40px;
@@ -103,36 +103,46 @@
             margin-right: 20px;
             cursor: pointer;
         }
+    
+         @media (max-width: 600px) {
+            header { padding: 15px 20px; font-size: 22px; text-align: center; }
+            footer { padding: 15px 20px; font-size: 12px; flex-direction: column; text-align: center; gap: 10px; }
+            .question-box { margin: 15px 10px; padding: 15px; font-size: 18px; }
+            .options-container { gap: 10px; padding: 10px 10px 20px 10px; }
+            .option-btn { width: 75px; height: 75px; font-size: 14px; }
+            .card-footer { padding: 15px 20px; flex-direction: column; gap: 15px; }
+            .score-btn { font-size: 20px; padding: 15px 30px; } /* Это для страницы результата */
+        }
     </style>
 </head>
 <body>
 
-    <!-- Шапка -->
+    <!-- Head-->
     <header>
         <div class="logo">CheckEng</div>
     </header>
 
-    <!-- Основной контент -->
+    <!-- Content -->
     <main>
         <h1><b>Швидка перевірка англійської.</b><br>Дізнайся, що ти знаєш, а що ні!</h1>
         
         <div class="grid">
-            <!-- Картка 1 -->
+            <!-- Card 1 -->
             <div class="card">
                 <span class="icon">🎧</span>
                 <a href="#" class="btn">Listening test</a>
             </div>
-            <!-- Картка 2 -->
+            <!-- Card 2 -->
             <div class="card">
                 <span class="icon">📖</span>
                 <a href="#" class="btn">Reading test</a>
             </div>
-            <!-- Картка 3 -->
+            <!-- Card 3 -->
             <div class="card">
                 <span class="icon">🖊️</span>
                 <a href="w1.html" class="btn">Writing test</a>
             </div>
-            <!-- Картка 4 -->
+            <!-- Card 4 -->
             <div class="card">
                 <span class="icon">🔍</span>
                 <a href="g1.html" class="btn">Grammar test</a>
@@ -140,7 +150,7 @@
         </div>
     </main>
 
-    <!-- Подвал -->
+    <!-- Footer -->
     <footer>
         <div class="footer-links">
             <span>Зв'яжіться з нами</span>

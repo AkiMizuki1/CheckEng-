@@ -17,6 +17,17 @@
         .progress { color: #777; font-weight: bold; font-size: 18px; }
         .next-btn { background: linear-gradient(135deg, #439a86, #2a7a67); color: white; padding: 10px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; }
         footer { background-color: #a8d5c4; padding: 20px 40px; display: flex; justify-content: space-between; font-size: 14px; font-weight: bold; }
+    
+         @media (max-width: 600px) {
+            header { padding: 15px 20px; font-size: 22px; text-align: center; }
+            footer { padding: 15px 20px; font-size: 12px; flex-direction: column; text-align: center; gap: 10px; }
+            .question-box { margin: 15px 10px; padding: 15px; font-size: 18px; }
+            .options-container { gap: 10px; padding: 10px 10px 20px 10px; }
+            .option-btn { width: 75px; height: 75px; font-size: 14px; }
+            .card-footer { padding: 15px 20px; flex-direction: column; gap: 15px; }
+            .score-btn { font-size: 20px; padding: 15px 30px; } /* Это для страницы результата */
+        }
+    
     </style>
 </head>
 <body>
